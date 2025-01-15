@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Persistence;
 
 
+//the first code which execute by the server on startup
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

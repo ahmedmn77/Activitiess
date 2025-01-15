@@ -11,13 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{59747BE8-5768-4601-90EA-C94C47C37FBD}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "client", "client\client.esproj", "{BBC64802-B923-4C3F-BCFC-8566DC283C93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{72EED90C-01F5-420C-830B-D33768EFB81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,14 @@ Global
 		{59747BE8-5768-4601-90EA-C94C47C37FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59747BE8-5768-4601-90EA-C94C47C37FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59747BE8-5768-4601-90EA-C94C47C37FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC64802-B923-4C3F-BCFC-8566DC283C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC64802-B923-4C3F-BCFC-8566DC283C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC64802-B923-4C3F-BCFC-8566DC283C93}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BBC64802-B923-4C3F-BCFC-8566DC283C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC64802-B923-4C3F-BCFC-8566DC283C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC64802-B923-4C3F-BCFC-8566DC283C93}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
