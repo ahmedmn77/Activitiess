@@ -16,5 +16,5 @@ dotnet ef migrations add InitialCreate -s API -p Persistence
 API argument is the startup project
 Persistence argument is the project which contains the dbContext
 
-to run database update using cli
+to run database update using .Net cli:
 dotnet ef database update -s MMS.API -p MMS.Data
