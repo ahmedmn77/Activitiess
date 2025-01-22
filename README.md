@@ -23,3 +23,6 @@ What is module in js or react?
 it is file that contains java script code like constants, objects, functions, variables.
 What is the differnce betwen using export default and normat export?
 when you use export default you can import withlout writing curly braces.
+
+what types you can use to set prop value?
+prop can take any thing that you can put in a variable like functions, objects, arrays
