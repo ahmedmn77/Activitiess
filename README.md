@@ -34,3 +34,4 @@ what are the two important rules of hooks?
  2) only call hook in a function component.
 
 whats is state? it is peice of data that is kept in the component
+Note: state is a hook
