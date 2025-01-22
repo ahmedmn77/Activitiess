@@ -32,3 +32,5 @@ hook is a function, it starts with 'use'
 what are the two important rules of hooks?
  1) only call hooks on the top level (they should be always called)
  2) only call hook in a function component.
+
+whats is state? it is peice of data that is kept in the component
