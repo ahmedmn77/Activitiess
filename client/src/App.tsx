@@ -1,13 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import React from 'react'
 import './App.css'
+import { ducks } from './demo'
+import DuckItem from './duckItem'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
-    <h1> Reactivities </h1> 
+      <div>
+          <h1> Reactivities </h1> 
+
+          {/*{ducks.map(duck => (*/}
+          {/*    <DuckItem key={ duck.name } duck={duck} />*/}
+          {/*)) }*/}
+      </div>
   )
 }
 

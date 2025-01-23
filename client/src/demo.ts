@@ -1,4 +1,4 @@
-interface duck {
+interface Duck {
     name: string,
     numLegs: number | string,
     makeSound: (sound:string) => void
@@ -6,19 +6,19 @@ interface duck {
 
 
 
-const duck1 : duck = {
+const duck1: Duck = {
     name: 'huey',
     numLegs: 2,
-    makeSound: (sound: any) => console.log(sound)
+    makeSound: (sound: string) => console.log(sound)
 }
 
-const duck2 : duck = {
+const duck2: Duck = {
     name: 'duey',
     numLegs: 2,
-    makeSound: () => console.log('quack')
+    makeSound: (sound: string) => console.log(sound)
 }
 
-const duck3: duck = {
+const duck3: Duck = {
     name: "",
     numLegs: 0,
     makeSound: function(sound: string): void {
@@ -26,10 +26,16 @@ const duck3: duck = {
     }
 }
 
-duck1.name = '42';
+const duck4: Duck = {
+    name: "Mickey",
+    numLegs: 4,
+    makeSound: function(sound: string): void {
+        throw new Error("Function not implemented.");
+    }
+}
 
 
-
-export const ducks =[duck1,duck2]
+export const ducks = [duck1, duck2, duck3, duck4];
+export default Duck;
 
 
