@@ -37,6 +37,7 @@ prop can take any thing that you can put in a variable like functions, objects, 
 
 What is react hook?
 hook is a function, it starts with 'use'
+
 what are the two important rules of hooks?
  1) only call hooks on the top level (they should be always called)
  2) only call hook in a function component.
