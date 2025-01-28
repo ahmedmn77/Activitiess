@@ -4,6 +4,7 @@ GitHub Resource:-
 - GitHub.com/trycatchlearn/reactivities
 
 Command
+
 dotnet --info (list all installed dotnet sdk and runtime)
 to switch between dotnet versions
 dotnet new globaljson --sdk-version 3.0.100-preview-010184 --force
