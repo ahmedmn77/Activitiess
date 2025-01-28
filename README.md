@@ -12,7 +12,7 @@ to switch between dotnet versions
 dotnet new globaljson --sdk-version 3.0.100-preview-010184 --force
 
 to install entity tool to enable migration commands
-dotnet tool install --global dotnet-ef --version 7.0.3
+dotnet tool install --global dotnet-ef --version 7.0.0
 
 to add your initial migration
 dotnet ef migrations add InitialCreate -s API -p Persistence
