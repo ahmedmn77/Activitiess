@@ -37,7 +37,7 @@ var services = scope.ServiceProvider;
 try
 {
     var context = services.GetRequiredService<DataContext>();
-    await context.Database.MigrateAsync();
+    await context.Database.MigrateAsync(); //auto update dayabase with latest migrations
     await Seed.SeedDataAsync(context);
 }
 catch (Exception ex)
