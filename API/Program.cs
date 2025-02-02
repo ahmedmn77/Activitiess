@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Application;
 using Persistence;
+using Application.Activities;
 
 
 //the first code which execute by the server on startup
@@ -13,9 +15,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddMediatR(cfg => 
+    cfg.RegisterServicesFromAssembly(typeof(List.Handler).Assembly));
+
 builder.Services.AddDbContext<DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolice", policy =>
+    {
+        policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+    });
 });
 
 var app = builder.Build();
@@ -26,6 +39,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("CorsPolice");
 
 app.UseAuthorization();
 

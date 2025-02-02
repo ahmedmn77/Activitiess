@@ -1,4 +1,4 @@
-import { Duck } from "./demo"
+import Duck from "./demo"
 
 interface Props {
     duck: Duck

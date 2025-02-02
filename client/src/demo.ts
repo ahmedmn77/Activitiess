@@ -4,8 +4,6 @@ interface Duck {
     makeSound: (sound:string) => void
 }
 
-
-
 const duck1: Duck = {
     name: 'huey',
     numLegs: 2,
