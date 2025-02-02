@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Application;
 using Persistence;
 using Application.Activities;
+using Application.Core;
 
 
 //the first code which execute by the server on startup
@@ -17,6 +17,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMediatR(cfg => 
     cfg.RegisterServicesFromAssembly(typeof(List.Handler).Assembly));
+
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 builder.Services.AddDbContext<DataContext>(opt =>
 {
