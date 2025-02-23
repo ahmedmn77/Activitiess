@@ -12,6 +12,7 @@ to switch between dotnet versions
 dotnet new globaljson --sdk-version 3.0.100-preview-010184 --force
 
 to install entity tool to enable migration commands
+
 dotnet tool install --global dotnet-ef --version 7.0.0
 
 to add your initial migration
@@ -29,8 +30,8 @@ dotnet ef database update -s MMS.API -p MMS.Data
 What is module in js or react?
 it is file that contains java script code like constants, objects, functions, variables.
 
-What is the differnce betwen using export default and normat export?
-when you use export default you can import withlout writing curly braces.
+What is the differnce betwen using export default and normal export?
+when you use export default you can import without writing curly braces.
 
 What types you can use to set prop value?
 prop can take any thing that you can put in a variable like functions, objects, arrays
