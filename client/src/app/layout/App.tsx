@@ -14,8 +14,6 @@ function App() {
     const [selectedActivity, setSelectedActivity] = useState<Activity|undefined>(undefined)
     const [editMode, setEditMode] = useState(false)
 
-
-
     useEffect(() => {
         axios.get<Activity[]>('http://localhost:5000/api/activities')
             .then(response => {
